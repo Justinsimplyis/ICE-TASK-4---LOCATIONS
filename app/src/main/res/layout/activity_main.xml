@@ -4,11 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginTop="25dp"
+    android:layout_marginTop="2dp"
     android:padding="16dp"
-    android:background="@android:color/white"
+    android:background="@android:color/holo_blue_light"
     android:gravity="center_horizontal">
 
+    <ImageView
+        android:id="@+id/topImage"
+        android:layout_width="306dp"
+        android:layout_height="109dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Top Image"
+        android:src="@drawable/location_img_icon" />
     <EditText
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
@@ -32,6 +40,14 @@
         android:padding="10dp"
         android:layout_marginBottom="20dp" />
 
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
     <TextView
         android:id="@+id/lblOutput"
         android:layout_width="wrap_content"
@@ -48,6 +64,5 @@
         android:layout_weight="1"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
-
 
 </LinearLayout>

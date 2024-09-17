@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import com.icetask4.nearbyplaceslocationsapp.R
+
 
 data class Place(val name: String, val latitude: Double, val longitude: Double)
 
